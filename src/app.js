@@ -35,8 +35,6 @@ global.logger = winston.createLogger({
   )
 });
 
-app.get('/', (req, res) => res.send('Hello World'));
-
 app.listen(port, async () => {
   try {
     const fileExists = await exists(global.fileName);
